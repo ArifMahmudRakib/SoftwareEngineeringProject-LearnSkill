@@ -77,12 +77,12 @@ if(isset($message)){
       <nav class="sticky-nav">
         <img src="image/new-logo.png" class="logo" />
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="course-page.html">Courses</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="course-page.php">Courses</a></li>
+          <li><a href="about.php">About Us</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
           <li><a href="location:login_form.php"><?php echo $_SESSION['user_name'] ?></a></li>
-          <li><a href="logout.php" class="btn">logout</a><li>
+          <li><a href="logout.php" >logout</a><li>
         </ul>
       </nav>
 
@@ -97,21 +97,29 @@ if(isset($message)){
         </form>
 
         <div class="category-list">
+        <a href="course-details-C.php">
           <div class="category">
-            <img src="image/c.png" alt="" />
+            <img src="image/c.png"  alt="" />
           </div>
+          </a>
+          <a href="course-details-C.php">
           <div class="category">
             <img src="image/c++.png" alt="" />
           </div>
+          </a>
           <div class="category">
             <img src="image/c-one.png" alt="" />
           </div>
+          <a href="course-details-java.php">
           <div class="category">
             <img src="image/java.png" alt="" />
           </div>
+          </a>
+          <a href="course-details-python.php">
           <div class="category">
             <img src="image/python.png" alt="" />
           </div>
+          </a>
         </div>
       </div>
     </div>
