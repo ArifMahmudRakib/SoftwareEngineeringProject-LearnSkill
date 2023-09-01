@@ -25,10 +25,10 @@
         <h1 class="logo">Learn <span class="span-one">Skill</span></h1>
         <nav>
           <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="course-page.html">Courses</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="course-page.php">Courses</a></li>
+            <li><a href="about.php">About Us</a></li>
+            <li><a href="contact.php">Contact Us</a></li>
           </ul>
         </nav>
 
