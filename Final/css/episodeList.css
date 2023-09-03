@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white
+ }
+
+.top{
+    padding-top: 185px;
+    text-align: center;
+}
+
+.btn-custom {
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 13px 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 17px;
+}
+
+
+.btn-custom:hover {
+    background-color: #0056b3; 
+}
+
+.custom-text {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 5px;
+    padding-top: 41px;
+    padding-bottom: 33px;
+}
+
+
+.custom-table {
+    background-color: #fff; 
+    color: #333; 
+    border-collapse: collapse; 
+    width: 100%; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.custom-table th {
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+}
+
+
+.custom-table tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+
+.custom-table td {
+    padding: 10px; 
+}
+
+
+.custom-table a {
+    color: #007bff; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+
+.custom-btn-delete {
+    background-color: #ff4d4d; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.custom-btn-delete:hover {
+    background-color: #ff3333; 
+}
+
+.new{
+    text-align: center;
+    padding: 31px;
+    font-size: 21px;
+}
+
+.custom-link btn-success{
+    color: #ff3333;
+}
+
+

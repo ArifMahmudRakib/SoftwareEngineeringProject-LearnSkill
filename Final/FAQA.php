@@ -1,0 +1,137 @@
+<?php
+
+include 'config.php';
+
+session_start();
+
+
+if(!isset($_SESSION['admin_name'])){
+   header('location:login_form.php');
+}
+
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="FAQ.css">
+</head>
+<body>
+
+    <header class="Header">
+        <nav id="main-nav">
+
+            <h2><a href="demo3.html"><span>Learn</span> Skill</a></h2>
+            <div class="nav-link">
+                <ul>
+                    <li><a href="courseList1.html">Courses</a></li>
+                    <li><a href="catagory.html">Categories</a></li>
+                    <li><a href="index.php">About</a></li>
+                    <li><a href="admin.php"><?php echo $_SESSION['admin_name'] ?></a></li>
+                </ul>
+            </div>
+            <span class="menu-icon"><i class="fa fa-bars"></i></span>
+
+        </nav>
+
+        
+
+        
+    </header>
+
+
+    <main>
+        <div class="faq-container">
+            <h1>Frequently Asked Questions</h1>
+    
+            <div class="faq-item">
+                <h2>What courses do you offer?</h2>
+                <p>We offer a wide range of courses in various subjects, including programming, languages, mathematics, science, and more. Explore our course catalog to find the ones that suit your interests and learning goals.</p>
+            </div>
+    
+            <div class="faq-item">
+                <h2>How do I enroll in a course?</h2>
+                <p>To enroll in a course, simply browse our course catalog, select the course you want to take, and click the "Enroll Now" button. You'll be prompted to create an account or log in if you already have one. Complete the enrollment process, and you'll have access to the course materials.</p>
+            </div>
+    
+            <div class="faq-item">
+                <h2>Are the courses self-paced?</h2>
+                <p>Yes, most of our courses are self-paced, allowing you to learn at your own speed and convenience. You can access the course materials and complete lessons at any time that fits your schedule.</p>
+            </div>
+    
+            <div class="faq-item">
+                <h2>Do you offer certificates upon course completion?</h2>
+                <p>Yes, upon successful completion of a course, you'll receive a course completion certificate. The certificate will showcase your achievements and can be a valuable addition to your portfolio.</p>
+            </div>
+    
+            <div class="faq-item">
+                <h2>Can I access the courses on mobile devices?</h2>
+                <p>Yes, our website is fully responsive, and you can access the courses on various devices, including desktops, laptops, tablets, and smartphones. Learn on the go with our mobile-friendly platform.</p>
+            </div>
+    
+            <!-- Add more FAQ items as needed -->
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="OurServices.html">Our Services</a></li>
+                        <li><a href="PrivacyPolicies.html">Privacy Policies</a></li>
+                        <li><a href="Affiliate.html">Affiliate</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="">Completed Course</a></li>
+                        <li><a href="">Return</a></li>
+                        <li><a href="">Enroll</a></li>
+                        <li><a href="">Payment Options</a></li>
+
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>Catagories</h4>
+                    <ul>
+                        <li><a href="">Programming Language</a></li>
+                        <li><a href="">Frontend</a></li>
+                        <li><a href="">Backend</a></li>
+                        <li><a href="">Data Structures</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        
+    </footer>
+    
+</body>
+</html>
